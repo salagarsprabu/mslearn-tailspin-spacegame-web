@@ -72,7 +72,7 @@ steps:
   inputs:
     command: custom
     custom: tool
-    arguments: 'install --global dotnet-reportgenerator-globaltool'
+    arguments: 'install --global dotnet-reportgenerator-globaltool --version 4.8.8'
 
 - task: DotNetCoreCLI@2
   displayName: 'Create code coverage report'
