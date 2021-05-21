@@ -49,8 +49,8 @@ steps:
   displayName: 'Install .NET Core tools from local manifest'
   inputs:
     command: custom
-    custom: tool
-    arguments: 'restore'
+    custom: new
+    arguments: 'tool-manifest'
 
 - task: DotNetCoreCLI@2
   displayName: 'Run unit tests - $(buildConfiguration)'
